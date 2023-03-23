@@ -1241,7 +1241,7 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    max-width: 600px;
+    max-width: 700px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -1253,11 +1253,11 @@ body {
 
 .about--options>a {
     position: relative;
-    width: 150px;
-    height: 75px;
+    width: 200px;
+    height: 100px;
     text-decoration: none;
     color: #fff;
-    border: 10px solid #0f33ff;
+    border: 2px solid #0f33ff;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
