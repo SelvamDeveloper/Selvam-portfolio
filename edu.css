@@ -3,13 +3,18 @@
   }
   
   /* Set a background color */
- 
+ .container{
+    position: relative;;
+ }
   
   /* The actual timeline (the vertical ruler) */
   .timeline {
-    position: relative;
-    max-width: 1200px;
+    position: absolute;
+    max-width: 100%;
     margin: 0 auto;
+    height: 100%;
+    margin-top: 172px;
+    overflow: scroll;
   }
   
   /* The actual timeline (the vertical ruler) */
@@ -36,11 +41,11 @@
   .container01::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
+    width: 15px;
+    height: 15px;
+    right: -12px;
+    background-color: #24292e;
+    border: 4px solid #0f33ff;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -86,15 +91,20 @@
   
   /* Fix the circle for containers on the right side */
   .right::after {
-    left: -16px;
+    left: -12px;
   }
   
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: #24292e;
     position: relative;
     border-radius: 6px;
+  }
+  .content h2{
+    background-color: #0f33ff;
+    padding: 8px;
+    width: 70px;
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
