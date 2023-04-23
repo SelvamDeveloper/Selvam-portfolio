@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
   }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
   
   /* Set a background color */
  .container{
@@ -12,7 +16,7 @@
     position: absolute;
     max-width: 100%;
     margin: 0 auto;
-    height: 100%;
+    height: 70%;
     margin-top: 172px;
     overflow: scroll;
   }
@@ -24,7 +28,7 @@
     width: 6px;
     background-color: white;
     top: 0;
-    bottom: 0;
+    bottom: -50%;
     left: 50%;
     margin-left: -3px;
   }
@@ -104,7 +108,8 @@
   .content h2{
     background-color: #0f33ff;
     padding: 8px;
-    width: 70px;
+    width: 40%;
+    font-size: 15px;
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -112,17 +117,19 @@
   /* Place the timelime to the left */
     .timeline::after {
       left: 31px;
+      bottom: -80%;
     }
   
   /* Full-width containers */
-    .container {
+    .container01 {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
+      font-size: 13px;
     }
   
   /* Make sure that all arrows are pointing leftwards */
-    .container::before {
+    .container01::before {
       left: 60px;
       border: medium solid white;
       border-width: 10px 10px 10px 0;
@@ -131,11 +138,16 @@
   
   /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-      left: 15px;
+      left: 18px;
     }
   
   /* Make all right containers behave like the left ones */
     .right {
       left: 0%;
     }
+    .content h2{
+      width: 100%;
+      font-size: 3vw;
+    }
+    
   }
