@@ -784,6 +784,7 @@ body {
 
 .intro--banner img {
     position: absolute;
+    width: 60%;
     bottom: 21px;
     right: -12px
 }
@@ -1231,6 +1232,7 @@ body {
 }
 
 .about--banner img {
+    width: 40%;
     position: absolute;
     bottom: -90px;
     right: -12px
@@ -1607,7 +1609,8 @@ body {
 
 .work-request--options input[type="checkbox"]:checked+label {
     background-color: #0f33ff;
-    border-color: #0f33ff
+    border-color: #0f33ff;
+    color: white
 }
 
 .work-request--options input[type="checkbox"]:checked+label svg {

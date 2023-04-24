@@ -10,7 +10,7 @@
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="edu.css">
+  <link rel="stylesheet" href="skills.css">
 </head>
 
 <body>
@@ -37,45 +37,50 @@
                 </div>
               </header>
               <!-- section -->
-            <div class="main1">
-              <div class="timeline">
-                <div class="container01 left">
-                  <div class="content">
-                    <h2>BCA (Final year)</h2>
-                    <p>
-                      Sri Sankara Arts and Science College
-                      <br>
-                      Year Of Passing - 2023 / 78%
-                    </p>
+              <div class="center">
+              <div class="main">
+                <div class="progress">
+                  <div class="title">
+                    <h3>web design</h3>
+                  </div>
+                  <div class="barline">
+                    <div class="countbar" data-percentNumber="89"></div>
                   </div>
                 </div>
-                <div class="container01 right">
-                  <div class="content">
-                    <h2>HSC</h2>
-                    <p>swami vivekananda matri hr sec school
-                      <br>
-                      Year Of Passing - 2021 / 52%
-                    </p>
+                <div class="progress">
+                  <div class="title">
+                    <h3>Graphic Design</h3>
+                  </div>
+                  <div class="barline">
+                    <div class="countbar" data-percentNumber="95"></div>
                   </div>
                 </div>
-                <div class="container01 left">
-                  <div class="content">
-                    <h2>SSLC</h2>
-                    <p>Bharathi dasan matri hr sec school
-                      <br>
-                      Year Of Passing - 2018 / 63%
-                    </p>
+                <div class="progress">
+                  <div class="title">
+                    <h3>React.js</h3>
+                  </div>
+                  <div class="barline">
+                    <div class="countbar" data-percentNumber="45"></div>
                   </div>
                 </div>
-                <div class="container01 right">
-                  <div class="content">
-                    <h2>Short-Note About me</h2>
-                    <p>Hello! Myself Selvam, I am a recent graduate with a degree in BCA.I have completed several programming projects during my studies, including a web designing and complete website projects that received positive feedback from my professors. I have strong problem-solving and analytical skills, which I believe will be valuable in this role. I am excited about the opportunity to work for your company and contribute to your team.</p>
+                <div class="progress">
+                  <div class="title">
+                    <h3>Figma</h3>
+                  </div>
+                  <div class="barline">
+                    <div class="countbar" data-percentNumber="70"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="title">
+                    <h3>javarscript</h3>
+                  </div>
+                  <div class="barline">
+                    <div class="countbar" data-percentNumber="60"></div>
                   </div>
                 </div>
               </div>
             </div>
-            
             </div>
           </div>
         </div>
@@ -95,5 +100,24 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
             <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
             <script src="assets/js/functions-min.js"></script>
+            <script>
+              let  numberPercent = document.querySelectorAll('.countbar')
+              let getPercent = Array.from(numberPercent)
+
+              getPercent.map((items) => {
+                  let startCount = 0
+                  let progressBar = () => {
+                      startCount ++
+                      items.innerHTML = `<h3>${startCount}%</h3>`
+                      items.style.width = `${startCount}%`
+                      if(startCount == items.dataset.percentnumber) {
+                          clearInterval(stop)
+                      }
+                  }
+                  let stop = setInterval(() => {
+                      progressBar()
+                  },30)
+              })
+            </script>
 </body>
 </html>

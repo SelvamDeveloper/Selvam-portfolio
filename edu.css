@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    color: white;
   }
 
   ::-webkit-scrollbar{
@@ -28,7 +29,7 @@
     width: 6px;
     background-color: white;
     top: 0;
-    bottom: -50%;
+    bottom: -40%;
     left: 50%;
     margin-left: -3px;
   }
@@ -109,7 +110,11 @@
     background-color: #0f33ff;
     padding: 8px;
     width: 40%;
-    font-size: 15px;
+    font-size: 17px;
+  }
+  .content p{
+    font-size: 19px;
+    text-transform: capitalize;
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
