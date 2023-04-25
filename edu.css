@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     color: white;
+    text-decoration: none;
   }
 
   ::-webkit-scrollbar{
