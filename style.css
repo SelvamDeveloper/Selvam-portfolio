@@ -1,0 +1,247 @@
+*{
+padding: 0;
+margin: 0;
+}
+body{
+    background-color: black;
+}
+.container {
+    width: 70%;
+    margin: auto;
+    background-color: #02000000;
+    overflow: hidden;
+  }
+  .text{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    z-index: 1;
+
+  }
+  .text h2 {
+
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+  }
+ .text h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: blue;
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .text p{
+    color: rgb(238, 234, 234);
+    font-family: system-ui;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+  }
+  .text a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+  }
+.text a:hover{
+    color: blue;
+    cursor: pointer;
+  }
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid;
+  }
+  
+  .white {
+    border-bottom-color: white;
+  }
+  
+  .blue {
+    border-bottom-color: blue;
+  }
+  
+  #triangle-1 {
+    top: 10%;
+    left: 5%;
+    animation: move-1 3s ease-in-out infinite alternate;
+  }
+  
+  #triangle-2 {
+    top: 20%;
+    left: 25%;
+    animation: move-2 4s ease-in-out infinite alternate;
+  }
+  
+  #triangle-3 {
+    top: 30%;
+    left: 50%;
+    animation: move-3 2s ease-in-out infinite alternate;
+  }
+  
+  #triangle-4 {
+    top: 40%;
+    left: 75%;
+    animation: move-4 5s ease-in-out infinite alternate;
+  }
+  
+  #triangle-5 {
+    top: 50%;
+    left: 90%;
+    animation: move-5 4s ease-in-out infinite alternate;
+  }
+  
+  #triangle-6 {
+    top: 60%;
+    left: 75%;
+    animation: move-6 2s ease-in-out infinite alternate;
+  }
+  
+  #triangle-7 {
+    top: 70%;
+    left: 50%;
+    animation: move-7 3s ease-in-out infinite alternate;
+  }
+  
+  #triangle-8 {
+    top: 80%;
+    left: 25%;
+    animation: move-8 4s ease-in-out infinite alternate;
+  }
+  
+  #triangle-9 {
+    top: 90%;
+    left: 5%;
+    animation: move-9 2s ease-in-out infinite alternate;
+  }
+  
+  #triangle-10 {
+    top: 60%;
+    left: 15%;
+    animation: move-10 5s ease-in-out infinite alternate;
+  }
+  
+ 
+  
+  @keyframes move-1 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(20px, 20px) rotate(360deg);
+    }
+  }
+  
+  @keyframes move-2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(40px, 40px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes move-3 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(60px, -60px) rotate(180deg);
+    }
+  }
+  
+  @keyframes move-4 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(80px, 80px) rotate(-180deg);
+    }
+  }
+  
+  @keyframes move-5 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-40px, 60px) rotate(90deg);
+    }
+  }
+  @keyframes move-6 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(60px, 20px) rotate(-90deg);
+    }
+  }
+  
+  @keyframes move-7 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-20px, -80px) rotate(180deg);
+    }
+  }
+  
+  @keyframes move-8 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-80px, -40px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes move-9 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(20px, -40px) rotate(180deg);
+    }
+  }
+  
+  @keyframes move-10 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-60px, 80px) rotate(-90deg);
+    }
+  }
+  
+  
+  
+  @media(max-width: 700px){
+    .text h2 {
+
+      font-family: 'Montserrat', sans-serif;
+      color: rgb(255, 255, 255);
+      font-size: 10vw;
+    }
+   .text h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: blue;
+      font-size: 10vw;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .text p{
+      font-size: 3vw;
+    }
+    .text a{
+      font-size: 4.5vw;
+    }
+  }

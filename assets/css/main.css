@@ -1839,12 +1839,12 @@ body {
 .outer-nav>li::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 50%;
     -webkit-transform: translate(-50%, -25%);
     transform: translate(-50%, -25%);
     width: 110%;
-    height: 15px;
+    height: 5px;
     opacity: 0;
     background-color: #0f33ff
 }
