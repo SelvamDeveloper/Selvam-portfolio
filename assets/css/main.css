@@ -1266,15 +1266,15 @@ body {
 }
 
 .about--options>a:nth-child(1) {
-    background-image: url("../img/about-winners.jpg")
+    background-image: url("https://media.istockphoto.com/id/1075599562/photo/programmer-working-with-program-code.jpg?s=612x612&w=0&k=20&c=n3Vw5SMbMCWW1YGG6lnTfrwndNQ8B_R4Vw-BN7LkqpA=")
 }
 
 .about--options>a:nth-child(2) {
-    background-image: url("../img/about-philosophy.jpg")
+    background-image: url("https://s.yimg.com/ny/api/res/1.2/OM98o8k21Y5w0XeWUTjUqA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://o.aolcdn.com/hss/storage/midas/5b5878006d1100b632ac9503161ef8d9/205556425/Xbox%2BAcademy%2Bat%2BMicrosoft%2BStore%2B%282%29-ed.jpg")
 }
 
 .about--options>a:nth-child(3) {
-    background-image: url("../img/about-history.jpg")
+    background-image: url("https://solutions.rent/wp-content/uploads/2019/07/spotkanie-biznesowe.jpg")
 }
 
 .about--options>a:hover h3 {
