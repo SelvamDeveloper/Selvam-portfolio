@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simply One</title>
+        <link rel="icon" href="img/fav-icon.png">
+        <link rel="stylesheet" href="portstyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/1df1b0320f.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+<body>
+     
+    <div class="container">
+        <!-- wave contant  -->
+
+        <nav>
+            <a class="device-notification--logo" href="index.html">
+                <img src="assets/img/logo.png" alt="Global">
+                <p>SELVAM</p>
+              </a>
+            <div class="menu">
+                <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+            </div>
+        </nav>
+        <div class="filter-item">
+            <div class="sec" data-item="Communtiy">
+                <div  class="col-6">
+                    <img src="img/mac.png" alt="">
+                    <div class="res">
+                        <a href="https://simplyonecode.github.io/rdr-trp/"><img src="img/rdr.png" title="Click for live website"></a>
+                    </div>
+                <div class="scroll">
+                    <img src="img/p-1.png" alt=""></div>
+                </div>
+            </div>
+            <div class="sec" data-item="builder">
+                <div  class="col-6">
+                    <img src="img/mac.png" alt="">
+                    <div class="res">
+                        <a href="index.html"><img src="img/builder.png" title="Click for live website"></a>
+                    </div>
+                <div class="scroll">
+                    <img src="img/p-4.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="sec" data-item="builder">
+                <div  class="col-6">
+                    <img src="img/mac.png" alt="">
+                    <div class="res">
+                        <a href="https://vishnuramassociates.in/"><img src="img/vra.png" title="Click for live website"></a>
+                    </div>
+                <div class="scroll">
+                    <img src="img/p-2.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="sec" data-item="Communtiy">
+                <div  class="col-6">
+                    <img src="img/mac.png" alt="">
+                    <div class="res">
+                        <a href="http://thamizhanrp.com/"><img src="img/mobile.png" title="Click for live website"></a>
+                    </div>
+                <div class="scroll">
+                    <img src="img/p-3.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="sec" data-item="Podcast">
+                <div  class="col-6">
+                    <img src="img/mac.png" alt="">
+                    <div class="res">
+                        <a href="index.html"><img src="img/podcast.png" title="Click for live website"></a>
+                    </div>
+                <div class="scroll">
+                    <img src="img/p-5.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="sec" data-item="Photography">
+                <div  class="col-6">
+                    <img src="img/mac.png" alt="">
+                    <div class="res">
+                        <a href="http://thirdeyephotographykanchi.com/"><img src="img/3i.png" title="Click for live website"></a>
+                    </div>
+                <div class="scroll">
+                    <img src="img/p-6.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="sec" data-item="portfolio">
+                <div  class="col-6">
+                    <img src="img/portfolio.png" alt="">
+                    <div class="res">
+                        <a href="https://simplyonecode.github.io/Selvam-portfolio/"><img src="img/p-m.png" title="Click for live website"></a>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    <!-- message box alert  -->
+
+    <div class="toast active">
+  
+        <div class="toast-content">
+          <i class="fas fa-solid fa-check check"></i>
+      
+          <div class="message">
+            <span class="text text-1">Check live site</span>
+            <span class="text text-2">Click the Mobile to check live site</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+      
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="progress active"></div>
+      </div>
+    
+<!-- script section -->
+
+<script src="portfolio.js"></script>
+
+<script>
+
+       // message alert box 
+
+       const button = document.querySelector("button"),
+        toast = document.querySelector(".toast");
+     const   closeIcon = document.querySelector(".close"),
+        progress = document.querySelector(".progress");
+
+        let timer1, timer2;
+
+        // button.addEventListener("click", () => {
+        // toast.classList.add("active");
+        // progress.classList.add("active");
+
+        timer1 = setTimeout(() => {
+            toast.classList.remove("active");
+        }, 5000); //1s = 1000 milliseconds
+
+        timer2 = setTimeout(() => {
+            progress.classList.remove("active");
+        }, 5300);
+        
+
+        closeIcon.addEventListener("click", () => {
+        toast.classList.remove("active");
+
+        setTimeout(() => {
+            progress.classList.remove("active");
+        }, 300);
+
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+        });
+
+
+
+
+</script>
+
+</body>
+</html>
